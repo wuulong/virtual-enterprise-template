@@ -1,0 +1,23 @@
+# 通用虛擬企業 Agent 系統頂層配置
+version: "v0.1"
+mode: "template_generic"
+
+system:
+  default_llm_model: "gemini-3.0-flash"
+  temperature: 0.2
+  memory_strategy: "file_backed_ssot"
+
+paths:
+  enterprise_core: "00_Enterprise_Core"
+  workflows: "_Workflow"
+  departments:
+    hr: "01_HR_Human_Resources"
+    rd: "02_RD_Research_Development"
+    fin: "03_FIN_Finance_Accounting"
+    proc: "04_PROC_Procurement"
+    ops: "05_OPS_Operations"
+    mkt: "06_MKT_Sales_Marketing"
+
+security:
+  iso_27001_check: true
+  raci_enforcement: true

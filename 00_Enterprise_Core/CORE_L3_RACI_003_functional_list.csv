@@ -1,0 +1,21 @@
+function_code,department_id,department_name,function_name,apqc_code,layer_level,agent_id,description
+FNC-CORE-01,00_CORE,全域核心,企業戰略與願景規劃,APQC-1.1,L3,AGT-CORE-001,制定企業使命願景與全域白皮書
+FNC-CORE-02,00_CORE,全域核心,資安與 ISO 合規稽核,APQC-1.2,L3,AGT-CORE-002,控管 ISO 27001 硬性 Guardrails 與 PII 去識別化
+FNC-HR-01,01_HR,人力資源部,招募與職缺評估,APQC-7.1,L2,AGT-HR-001,審查職缺 JD 與執行面試評分
+FNC-HR-02,01_HR,人力資源部,人員績效考核,APQC-7.2,L2,AGT-HR-002,管理員工 OKR 與績效評定
+FNC-HR-03,01_HR,人力資源部,新進人員報到調度,APQC-7.3,L2,AGT-HR-001,觸發跨部門報到 Workflow 劇本
+FNC-RD-01,02_RD,研發部,系統架構與 PRD 規格,APQC-2.1,L2,AGT-RD-001,撰寫產品 PRD 與技術架構設計
+FNC-RD-02,02_RD,研發部,軟體工程與 Code Review,APQC-2.2,L2,AGT-RD-002,執行程式碼重構與單元測試
+FNC-RD-03,02_RD,研發部,技術債治理與 ADR,APQC-2.3,L4,AGT-RD-001,紀錄架構決策與積欠技術債
+FNC-FIN-01,03_FIN,財務會計部,預算報支與單據審核,APQC-9.1,L2,AGT-FIN-001,審核費用報支與科目標籤
+FNC-FIN-02,03_FIN,財務會計部,會計結帳與帳務管理,APQC-9.2,L3,AGT-FIN-002,處理日審與月度財務報表
+FNC-FIN-03,03_FIN,財務會計部,金流簽核門檻控管,APQC-9.3,L3,AGT-FIN-001,執行 NT$ 50,000 以上 Human-in-the-loop 門檻攔截
+FNC-PROC-01,04_PROC,採購供應部,詢價比價 (RFQ),APQC-4.2,L2,AGT-PROC-001,發起 3 家以上供應商比價
+FNC-PROC-02,04_PROC,採購供應部,供應商評鑑與評估,APQC-4.3,L2,AGT-PROC-002,定期維護合格供應商清單
+FNC-PROC-03,04_PROC,採購供應部,採購合約審查,APQC-4.4,L3,AGT-PROC-001,審查標準採購合約與條款
+FNC-OPS-01,05_OPS,營運交付部,服務交付與現場排班,APQC-10.1,L2,AGT-OPS-001,排定現場服務與人員調度班表
+FNC-OPS-02,05_OPS,營運交付部,服務品質查核,APQC-10.2,L2,AGT-OPS-002,執行服務完成確認與品質檢驗
+FNC-OPS-03,05_OPS,營運交付部,影子模式對齊比對,APQC-10.3,L4,AGT-OPS-001,執行員工 vs Agent 產出 Gap Analysis
+FNC-MKT-01,06_MKT,行銷業務部,行銷簡報與文案發布,APQC-3.2,L2,AGT-MKT-001,對照 Tone & Manner 撰寫行銷文案
+FNC-MKT-02,06_MKT,行銷業務部,業務 Copilot 客戶對接,APQC-3.1,L4,AGT-MKT-002,協助頂尖業務進行破冰話術建議
+FNC-MKT-03,06_MKT,行銷業務部,客戶關係與反饋追蹤,APQC-5.1,L2,AGT-MKT-001,追蹤客訴紀錄與滿意度調查

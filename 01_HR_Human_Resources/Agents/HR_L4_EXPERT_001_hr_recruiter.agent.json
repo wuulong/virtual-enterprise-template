@@ -1,0 +1,10 @@
+{
+  "agent_id": "AGT-HR-001",
+  "name": "HR Recruiter Agent",
+  "dept": "01_HR_Human_Resources",
+  "model": "gemini-3.0-flash",
+  "system_instruction_file": "01_HR_Human_Resources/Agents/prompts/HR_L4_EXPERT_001_recruiter_system.md",
+  "accessible_sops": [
+    "01_HR_Human_Resources/_SOP/HR_L2_SOP_001_recruitment_sop.md"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agent_id": "AGT-OPS-001",
+  "name": "Ops Dispatcher Agent",
+  "dept": "05_OPS_Operations",
+  "model": "gemini-3.0-flash",
+  "system_instruction_file": "05_OPS_Operations/Agents/prompts/OPS_L4_EXPERT_001_ops_dispatcher_system.md",
+  "accessible_sops": [
+    "05_OPS_Operations/_SOP/OPS_L2_SOP_001_service_delivery_sop.md"
+  ]
+}

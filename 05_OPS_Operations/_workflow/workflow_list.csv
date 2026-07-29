@@ -1,0 +1,3 @@
+workflow_code,workflow_name,department_id,trigger_event,primary_agent_id,system_code,human_in_loop,description
+WF-OPS-001,現場服務排班與派遣流程,05_OPS,收到客戶服務需求,AGT-OPS-001,SYS-OPS-GS,FALSE,自動配對技術人員班表、產出派工單與路線
+WF-OPS-002,影子模式Gap分析與對齊評估,05_OPS,影子營運批次任務觸發,AGT-OPS-001,SYS-OPS-GS,FALSE,比對真實員工與 Agent 產出差異並計算對齊率

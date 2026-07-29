@@ -1,0 +1,3 @@
+workflow_code,workflow_name,department_id,trigger_event,primary_agent_id,system_code,human_in_loop,description
+WF-PROC-001,供應商 RFQ 詢價比價流程,04_PROC,收到採購請購單,AGT-PROC-001,SYS-PROC-GS,FALSE,自動向合格供應商發出 RFQ 並整理 3 家比價表
+WF-PROC-002,供應商年度評鑑與資安稽核,04_PROC,年度供應商複查觸發,AGT-PROC-002,SYS-PROC-GS,TRUE,評估交貨品質、資安 ISO 27001 標籤與續約建議

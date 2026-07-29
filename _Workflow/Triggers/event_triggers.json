@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "trigger_id": "TRIG-HR-001",
+      "name": "New Employee Onboarding Event",
+      "event_type": "webhook",
+      "workflow_ref": "_Workflow/Workflows/wf_01_onboarding.yaml"
+    },
+    {
+      "trigger_id": "TRIG-PROC-001",
+      "name": "Purchase Approval Request",
+      "event_type": "event_stream",
+      "workflow_ref": "_Workflow/Workflows/wf_04_procurement_approval.yml"
+    }
+  ]
+}

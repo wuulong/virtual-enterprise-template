@@ -1,0 +1,6 @@
+# Agent Ignore File
+*.log
+*.tmp
+.DS_Store
+__pycache__/
+scratch/

@@ -1,0 +1,42 @@
+{
+  "enterprise_name": "Generic Virtual Enterprise",
+  "version": "1.0.0",
+  "departments": [
+    {
+      "dept_id": "01_HR",
+      "dept_name": "Human Resources",
+      "manager_agent_id": "AGT-HR-001",
+      "sub_units": ["Recruitment", "Performance", "Training"]
+    },
+    {
+      "dept_id": "02_RD",
+      "dept_name": "Research & Development",
+      "manager_agent_id": "AGT-RD-001",
+      "sub_units": ["Architecture", "Software Engineering", "Product Design"]
+    },
+    {
+      "dept_id": "03_FIN",
+      "dept_name": "Finance & Accounting",
+      "manager_agent_id": "AGT-FIN-001",
+      "sub_units": ["Accounting", "Audit", "Budget Control"]
+    },
+    {
+      "dept_id": "04_PROC",
+      "dept_name": "Procurement",
+      "manager_agent_id": "AGT-PROC-001",
+      "sub_units": ["Purchasing", "Vendor Management", "Contract Review"]
+    },
+    {
+      "dept_id": "05_OPS",
+      "dept_name": "Operations",
+      "manager_agent_id": "AGT-OPS-001",
+      "sub_units": ["Service Delivery", "Dispatching", "Quality Assurance"]
+    },
+    {
+      "dept_id": "06_MKT",
+      "dept_name": "Sales & Marketing",
+      "manager_agent_id": "AGT-MKT-001",
+      "sub_units": ["Digital Marketing", "Sales Copilot", "Customer Relation"]
+    }
+  ]
+}

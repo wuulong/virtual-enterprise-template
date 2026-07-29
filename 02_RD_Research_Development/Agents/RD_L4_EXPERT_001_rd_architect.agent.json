@@ -1,0 +1,10 @@
+{
+  "agent_id": "AGT-RD-001",
+  "name": "R&D Architect Agent",
+  "dept": "02_RD_Research_Development",
+  "model": "gemini-3.0-flash",
+  "system_instruction_file": "02_RD_Research_Development/Agents/prompts/RD_L4_EXPERT_001_architect_system.md",
+  "accessible_sops": [
+    "02_RD_Research_Development/_SOP/RD_L2_SOP_001_prd_spec_sop.md"
+  ]
+}

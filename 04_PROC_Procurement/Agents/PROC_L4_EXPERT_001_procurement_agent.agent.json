@@ -1,0 +1,10 @@
+{
+  "agent_id": "AGT-PROC-001",
+  "name": "Procurement Agent",
+  "dept": "04_PROC_Procurement",
+  "model": "gemini-3.0-flash",
+  "system_instruction_file": "04_PROC_Procurement/Agents/prompts/PROC_L4_EXPERT_001_procurement_system.md",
+  "accessible_sops": [
+    "04_PROC_Procurement/_SOP/PROC_L2_SOP_001_procurement_sop.md"
+  ]
+}

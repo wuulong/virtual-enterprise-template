@@ -1,0 +1,3 @@
+workflow_code,workflow_name,department_id,trigger_event,primary_agent_id,system_code,human_in_loop,description
+WF-CORE-001,跨部門新進人員報到管線,00_CORE,新員工錄用通知簽署,AGT-HR-001,SYS-HR-GS,TRUE,觸發 HR 排班、RD 權限發放與 FIN 薪資開戶管線
+WF-CORE-002,採購金額簽核與預算流轉管線,00_CORE,採購申請金額超過門檻,AGT-FIN-001,SYS-FIN-GS,TRUE,觸發比價審核、預算控管與高層簽核門檻

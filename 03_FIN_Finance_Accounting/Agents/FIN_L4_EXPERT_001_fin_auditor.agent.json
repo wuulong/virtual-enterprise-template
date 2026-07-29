@@ -1,0 +1,10 @@
+{
+  "agent_id": "AGT-FIN-001",
+  "name": "Fin Auditor Agent",
+  "dept": "03_FIN_Finance_Accounting",
+  "model": "gemini-3.0-flash",
+  "system_instruction_file": "03_FIN_Finance_Accounting/Agents/prompts/FIN_L4_EXPERT_001_auditor_system.md",
+  "accessible_sops": [
+    "03_FIN_Finance_Accounting/_SOP/FIN_L2_SOP_001_reimbursement_sop.md"
+  ]
+}

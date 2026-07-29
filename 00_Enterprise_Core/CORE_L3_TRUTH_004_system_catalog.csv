@@ -1,0 +1,8 @@
+system_code,system_name,department_id,tech_type,storage_location,core_features,connector_id
+SYS-CORE-DB,全域中控控制面資料庫,00_CORE,SQLite,db/control_plane.sqlite,控制面APQC映射與RACI權限控管,CONN-CORE-01
+SYS-HR-GS,人事與員工資料庫,01_HR,Google Sheet,Google Drive / HR_Master_Sheet,員工基本資料、報到紀錄、考勤與排班,CONN-HR-01
+SYS-RD-GIT,研發代碼與規格庫,02_RD,Git Repo,GitHub Repo / sys_eng & src,PRD規格書、Code Review、ADR與技術債紀錄,CONN-RD-01
+SYS-FIN-GS,財務報支與請款單據庫,03_FIN,Google Sheet,Google Drive / FIN_Ledger_Sheet,請款單、發票明細、預算控管與審核紀錄,CONN-FIN-01
+SYS-PROC-GS,採購比價與供應商庫,04_PROC,Google Sheet,Google Drive / PROC_RFQ_Sheet,RFQ詢價比價單、合格供應商名冊、採購合約,CONN-PROC-01
+SYS-OPS-GS,營運現場與服務交付日誌庫,05_OPS,Google Sheet,Google Drive / OPS_Delivery_Sheet,現場服務排班、交付紀錄、影子模式Gap比對,CONN-OPS-01
+SYS-MKT-CRM,行銷文案與客戶關係簡易CRM,06_MKT,Google Sheet,Google Drive / MKT_CRM_Sheet,潛在客戶名單、行銷貼文排程、客訴反饋追蹤,CONN-MKT-01

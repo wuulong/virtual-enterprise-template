@@ -1,0 +1,18 @@
+workflow_id: WF-CROSS-002
+name: 通用跨部門採購與報支簽核管線
+trigger: TRIG-PROC-001
+
+steps:
+  - step: 1
+    name: 採購單據與合約初步合規審查
+    agent_ref: "04_PROC_Procurement/Agents/PROC_L4_EXPERT_001_procurement_agent.agent.json"
+    context_sop: "04_PROC_Procurement/_SOP/PROC_L2_SOP_001_procurement_sop.md"
+    action: "validate_rfq_and_contract"
+
+  - step: 2
+    name: 預算控管與 ISO 稽核點核對
+    agent_ref: "03_FIN_Finance_Accounting/Agents/FIN_L4_EXPERT_001_fin_auditor.agent.json"
+    context_sop: "03_FIN_Finance_Accounting/_SOP/FIN_L2_SOP_001_reimbursement_sop.md"
+    action: "audit_budget_limit"
+    human_in_the_loop: true
+    approval_threshold: 50000

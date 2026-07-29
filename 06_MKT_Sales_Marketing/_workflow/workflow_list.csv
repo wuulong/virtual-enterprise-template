@@ -1,0 +1,3 @@
+workflow_code,workflow_name,department_id,trigger_event,primary_agent_id,system_code,human_in_loop,description
+WF-MKT-001,行銷簡報與社群貼文審佈流程,06_MKT,新產品發布或週報點,AGT-MKT-001,SYS-MKT-CRM,FALSE,依照 Tone & Manner 生成社群文案與發布排程
+WF-MKT-002,業務破冰 Copilot 與話術對接,06_MKT,潛在客戶線索建立,AGT-MKT-002,SYS-MKT-CRM,FALSE,分析客戶背景並推薦個人化破冰話術與方案

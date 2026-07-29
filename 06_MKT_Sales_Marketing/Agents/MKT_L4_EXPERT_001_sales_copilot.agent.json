@@ -1,0 +1,10 @@
+{
+  "agent_id": "AGT-MKT-001",
+  "name": "Sales Copilot Agent",
+  "dept": "06_MKT_Sales_Marketing",
+  "model": "gemini-3.0-flash",
+  "system_instruction_file": "06_MKT_Sales_Marketing/Agents/prompts/MKT_L4_EXPERT_001_sales_system.md",
+  "accessible_sops": [
+    "06_MKT_Sales_Marketing/_SOP/MKT_L2_SOP_001_content_approval_sop.md"
+  ]
+}

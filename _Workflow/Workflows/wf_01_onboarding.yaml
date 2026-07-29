@@ -1,0 +1,22 @@
+workflow_id: WF-CROSS-001
+name: 通用新進人員報到自動化管線
+trigger: TRIG-HR-001
+
+steps:
+  - step: 1
+    name: 報到資料核對與 HR 建立檔案
+    agent_ref: "01_HR_Human_Resources/Agents/HR_L4_EXPERT_001_hr_recruiter.agent.json"
+    context_sop: "01_HR_Human_Resources/_SOP/HR_L2_SOP_001_recruitment_sop.md"
+    action: "validate_employee_profile"
+
+  - step: 2
+    name: 薪轉帳號與自費福利建檔
+    agent_ref: "03_FIN_Finance_Accounting/Agents/FIN_L4_EXPERT_001_fin_auditor.agent.json"
+    context_sop: "03_FIN_Finance_Accounting/_SOP/FIN_L2_SOP_001_reimbursement_sop.md"
+    action: "create_payroll_account"
+
+  - step: 3
+    name: 研發/系統帳號權限開立
+    agent_ref: "02_RD_Research_Development/Agents/RD_L4_EXPERT_001_rd_architect.agent.json"
+    context_sop: "02_RD_Research_Development/_SOP/RD_L2_SOP_001_prd_spec_sop.md"
+    action: "provision_system_access"

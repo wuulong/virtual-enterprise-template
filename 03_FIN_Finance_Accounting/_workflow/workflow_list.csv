@@ -1,0 +1,3 @@
+workflow_code,workflow_name,department_id,trigger_event,primary_agent_id,system_code,human_in_loop,description
+WF-FIN-001,員工費用報支與發票審核流程,03_FIN,員工提交報支單,AGT-FIN-001,SYS-FIN-GS,FALSE,自動比對發票明細、科目標籤與金額合規性
+WF-FIN-002,月度會計結帳與財務報表產製,03_FIN,每月最後一個工作日,AGT-FIN-002,SYS-FIN-GS,TRUE,彙整試算表、資產負債表與產生財務結算日誌
