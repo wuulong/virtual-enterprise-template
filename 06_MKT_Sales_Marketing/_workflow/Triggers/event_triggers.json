@@ -1,0 +1,14 @@
+[
+  {
+    "event_id": "EVT-MKT-001",
+    "event_name": "MKT_CAMPAIGN_TRIGGERED",
+    "workflow_target": "Workflows/MKT_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-MKT-001"
+  },
+  {
+    "event_id": "EVT-MKT-002",
+    "event_name": "MKT_LEAD_GENERATED",
+    "workflow_target": "Workflows/MKT_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-MKT-002"
+  }
+]

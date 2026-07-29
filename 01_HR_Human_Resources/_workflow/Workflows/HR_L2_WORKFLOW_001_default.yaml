@@ -1,0 +1,11 @@
+name: HR_L2_WORKFLOW_001_recruitment_workflow
+description: HR 招募與履歷審查預設工作流劇本
+version: "v0.1"
+trigger: HR_JOB_REQUISITION_CREATED
+steps:
+  - id: step_01
+    name: 履歷篩選與 JD 比對
+    agent: AGT-HR-001
+  - id: step_02
+    name: 發送面試邀請與考評紀錄
+    agent: AGT-HR-001

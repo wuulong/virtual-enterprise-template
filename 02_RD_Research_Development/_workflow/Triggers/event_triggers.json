@@ -1,0 +1,14 @@
+[
+  {
+    "event_id": "EVT-RD-001",
+    "event_name": "RD_PRD_SPEC_SUBMITTED",
+    "workflow_target": "Workflows/RD_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-RD-001"
+  },
+  {
+    "event_id": "EVT-RD-002",
+    "event_name": "RD_PULL_REQUEST_SUBMITTED",
+    "workflow_target": "Workflows/RD_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-RD-002"
+  }
+]

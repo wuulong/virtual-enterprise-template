@@ -1,0 +1,11 @@
+name: RD_L2_WORKFLOW_001_prd_review_workflow
+description: 研發部 PRD 規格審查與程式碼 Code Review 劇本
+version: "v0.1"
+trigger: RD_PRD_SPEC_SUBMITTED
+steps:
+  - id: step_01
+    name: 系統架構評估與 PRD 審查
+    agent: AGT-RD-001
+  - id: step_02
+    name: Code Review 與靜態程式碼掃描
+    agent: AGT-RD-002

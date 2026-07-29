@@ -1,0 +1,11 @@
+name: MKT_L2_WORKFLOW_001_sales_copilot_workflow
+description: 行銷文案發布與業務 Copilot 破冰話術劇本
+version: "v0.1"
+trigger: MKT_CAMPAIGN_TRIGGERED
+steps:
+  - id: step_01
+    name: 行銷文案審核與發布排程
+    agent: AGT-MKT-001
+  - id: step_02
+    name: 業務 Copilot 破冰話術推薦
+    agent: AGT-MKT-002

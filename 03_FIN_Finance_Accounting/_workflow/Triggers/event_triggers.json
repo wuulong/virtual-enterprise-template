@@ -1,0 +1,14 @@
+[
+  {
+    "event_id": "EVT-FIN-001",
+    "event_name": "FIN_REIMBURSEMENT_SUBMITTED",
+    "workflow_target": "Workflows/FIN_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-FIN-001"
+  },
+  {
+    "event_id": "EVT-FIN-002",
+    "event_name": "FIN_MONTHLY_CLOSING_DUE",
+    "workflow_target": "Workflows/FIN_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-FIN-002"
+  }
+]

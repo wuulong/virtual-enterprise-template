@@ -1,0 +1,14 @@
+[
+  {
+    "event_id": "EVT-OPS-001",
+    "event_name": "OPS_SERVICE_REQUEST_RECEIVED",
+    "workflow_target": "Workflows/OPS_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-OPS-001"
+  },
+  {
+    "event_id": "EVT-OPS-002",
+    "event_name": "OPS_SHADOW_BATCH_ALIGNMENT",
+    "workflow_target": "Workflows/OPS_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-OPS-001"
+  }
+]

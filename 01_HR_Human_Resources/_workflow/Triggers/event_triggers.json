@@ -1,0 +1,14 @@
+[
+  {
+    "event_id": "EVT-HR-001",
+    "event_name": "HR_JOB_REQUISITION_CREATED",
+    "workflow_target": "Workflows/HR_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-HR-001"
+  },
+  {
+    "event_id": "EVT-HR-002",
+    "event_name": "HR_OKR_ASSESSMENT_DUE",
+    "workflow_target": "Workflows/HR_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-HR-002"
+  }
+]

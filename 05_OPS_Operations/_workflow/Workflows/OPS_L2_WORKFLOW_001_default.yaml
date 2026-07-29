@@ -1,0 +1,11 @@
+name: OPS_L2_WORKFLOW_001_dispatch_workflow
+description: 營運現場派遣與影子模式 Gap 分析劇本
+version: "v0.1"
+trigger: OPS_SERVICE_REQUEST_RECEIVED
+steps:
+  - id: step_01
+    name: 現場服務派遣與路線排定
+    agent: AGT-OPS-001
+  - id: step_02
+    name: 影子模式營運 Gap 分析與對齊度評估
+    agent: AGT-OPS-001

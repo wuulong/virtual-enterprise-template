@@ -1,0 +1,14 @@
+[
+  {
+    "event_id": "EVT-PROC-001",
+    "event_name": "PROC_REQUISITION_RECEIVED",
+    "workflow_target": "Workflows/PROC_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-PROC-001"
+  },
+  {
+    "event_id": "EVT-PROC-002",
+    "event_name": "PROC_VENDOR_REVIEW_DUE",
+    "workflow_target": "Workflows/PROC_L2_WORKFLOW_001_default.yaml",
+    "primary_agent": "AGT-PROC-002"
+  }
+]

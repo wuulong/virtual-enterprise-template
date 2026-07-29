@@ -1,0 +1,11 @@
+name: FIN_L2_WORKFLOW_001_reimbursement_workflow
+description: 財務費用報支審核與月度結帳劇本
+version: "v0.1"
+trigger: FIN_REIMBURSEMENT_SUBMITTED
+steps:
+  - id: step_01
+    name: 費用報支與發票合規性審核
+    agent: AGT-FIN-001
+  - id: step_02
+    name: 月度財務試算與結帳
+    agent: AGT-FIN-002

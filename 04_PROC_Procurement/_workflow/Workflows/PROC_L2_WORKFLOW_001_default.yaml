@@ -1,0 +1,11 @@
+name: PROC_L2_WORKFLOW_001_rfq_workflow
+description: 採購詢價比價 (RFQ) 與供應商評鑑劇本
+version: "v0.1"
+trigger: PROC_REQUISITION_RECEIVED
+steps:
+  - id: step_01
+    name: 供應商詢價比價 (RFQ) 處理
+    agent: AGT-PROC-001
+  - id: step_02
+    name: 供應商資安與交貨品質評鑑
+    agent: AGT-PROC-002
