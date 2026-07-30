@@ -41,8 +41,8 @@ def instantiate_virtual_enterprise(
     if not os.path.exists(abs_template):
         raise FileNotFoundError(f"範本庫目錄不存在: {abs_template}")
 
-    if os.path.exists(abs_target):
-        raise FileExistsError(f"目標實例目錄已存在，請先清除或指定新路徑: {abs_target}")
+    if os.path.exists(abs_target) and os.listdir(abs_target):
+        raise FileExistsError(f"目標實例目錄已存在且不為空，請先清除或指定新路徑: {abs_target}")
 
     stats = {
         "files_copied": 0,
@@ -60,7 +60,7 @@ def instantiate_virtual_enterprise(
             ignored.append(".gitmodules")
         return ignored
 
-    shutil.copytree(abs_template, abs_target, ignore=ignore_patterns)
+    shutil.copytree(abs_template, abs_target, ignore=ignore_patterns, dirs_exist_ok=True)
 
     # 統計複製檔案數量
     for root, dirs, files in os.walk(abs_target):
@@ -68,11 +68,9 @@ def instantiate_virtual_enterprise(
 
     # 2. 自動建置實例 DB (若指定 init_db)
     if init_db:
-        db_script = os.path.join(abs_target, "db", "init_db.py")
-        if os.path.exists(db_script):
+        db_dir = os.path.join(abs_target, "db")
+        if os.path.exists(db_dir):
             try:
-                # 執行實例內的 init_db.py
-                db_dir = os.path.join(abs_target, "db")
                 conn = sqlite3.connect(os.path.join(db_dir, "control_plane.sqlite"))
                 cursor = conn.cursor()
                 
