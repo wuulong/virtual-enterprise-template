@@ -46,14 +46,15 @@ CREATE TABLE execution_audit_logs (
 
 -- 5. 全域實體狀態總控調度表 (Entity State Engine)
 CREATE TABLE entity_state_ledger (
-    item_id VARCHAR(50) PRIMARY KEY,      -- 全域唯一 ID (例: 'SOP-OPS-001', 'AGT-FIN-001', 'WF-CROSS-001')
-    item_type VARCHAR(30) NOT NULL,      -- 項目類型 ('DOCUMENT', 'AGENT', 'WORKFLOW', 'TASK')
-    item_name VARCHAR(100) NOT NULL,     -- 項目名稱 (例: '在宅醫師出診車輛準備 SOP')
-    prefix_code VARCHAR(30),             -- 所屬 Prefix (例: '06_OPS_01')
-    apqc_id VARCHAR(30),                 -- 關聯 APQC (例: 'APQC-4.1.2')
-    status VARCHAR(30) NOT NULL,         -- 當前狀態 ('DRAFT', 'ACTIVE', 'IN_SHADOW_TEST', 'DEPRECATED', 'BLOCKED')
-    memo TEXT,                           -- 補充備註 / 人工審查意見 / 錯誤 Log
-    owner_agent_id VARCHAR(50),          -- 主責 Agent (例: 'AGT-OPS-001')
-    last_updated_by VARCHAR(50),         -- 最後更新者 ('HYDRATION_ENGINE', 'HUMAN_ADMIN')
+    item_id VARCHAR(50) PRIMARY KEY,          -- 全域唯一 ID (例: 'FNC-HR-001', 'SYS-OPS-GS', 'SOP-OPS-001')
+    item_type VARCHAR(30) NOT NULL,          -- 項目類型 ('FUNCTION', 'SYSTEM', 'DOCUMENT', 'AGENT', 'WORKFLOW', 'TASK')
+    item_name VARCHAR(100) NOT NULL,         -- 項目名稱 (例: '在宅醫師出診車輛準備 SOP')
+    prefix_code VARCHAR(30),                 -- 所屬 Prefix (例: '05_OPS')
+    apqc_id VARCHAR(30),                     -- 關聯 APQC (例: 'APQC-4.1.2')
+    status INTEGER NOT NULL DEFAULT 10,      -- 數字狀態碼 (10:虛擬發想, 20:虛擬確認, 30:真實對接啟動, 40:對齊進行中, 50:已對齊, 60:已確認, 70:修訂中, 80:修訂確認)
+    memo TEXT,                               -- 人工審查備註 / 補充資訊 / 錯誤 Log
+    meta_data TEXT DEFAULT '{}',             -- 擴充 Metadata (JSON 格式)
+    owner_agent_id VARCHAR(50),              -- 主責 Agent (例: 'AGT-OPS-001')
+    last_updated_by VARCHAR(50),             -- 最後更新者 ('HYDRATION_ENGINE', 'HUMAN_ADMIN')
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
